@@ -5,14 +5,15 @@ import {Link} from "react-router";
 
 class Child extends Component {
     add() {
-        const newAge = this.props.age+1;
+        const newAge = this.props.age + 1;
         this.props.onAdd(newAge);
     }
 
-    reduce(){
-        const newAge = this.props.age-1;
+    reduce() {
+        const newAge = this.props.age - 1;
         this.props.onReduce(newAge);
     }
+
     render() {
         return <div>
             <h1>child</h1>
